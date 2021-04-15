@@ -20,6 +20,7 @@ class TelaResultado : AppCompatActivity() {
 
         val id1 = intent.getIntExtra("id1", 0)
         val id2 = intent.getIntExtra("id2", 0)
+        val total = intent.getIntExtra("total", 0)
 
         if(id1 == 0) {
             idCachoro1.text = "não encontrado"
@@ -32,6 +33,6 @@ class TelaResultado : AppCompatActivity() {
         } else {
             idCachoro2.text = "$id2"
         }
-        precoTotal.text = "R$$precoTotal"
+        precoTotal.text = "R$$total"
     }
 }
