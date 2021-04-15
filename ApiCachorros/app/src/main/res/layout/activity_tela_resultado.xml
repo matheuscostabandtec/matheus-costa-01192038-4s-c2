@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaResultado">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado da pesquisa"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:id="@+id/tv_titulo_result"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cahorro 1: "
+        app:layout_constraintTop_toBottomOf="@id/tv_titulo_result"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tv_dog1"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/tv_titulo_result"
+        app:layout_constraintLeft_toRightOf="@id/tv_dog1"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tv_result_dog1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cahorro 2: "
+        app:layout_constraintTop_toBottomOf="@id/tv_dog1"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tv_dog2"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/tv_dog1"
+        app:layout_constraintLeft_toRightOf="@id/tv_dog2"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tv_result_dog2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preço total da compra: "
+        app:layout_constraintTop_toBottomOf="@id/tv_dog2"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tv_preco"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/tv_dog2"
+        app:layout_constraintLeft_toRightOf="@id/tv_preco"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tv_result_total" />
+
+</android.support.constraint.ConstraintLayout>
